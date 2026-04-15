@@ -1,0 +1,116 @@
+Types of APIs:
+	1. Simple Object Access Protocal (SOAP)
+	2. Representational State Transfer (REST)
+
+What is Rest Assured and why it is used:
+1) It is open-source Java library and hence free to use and are used for testing and validating Rest API or RESTFul web services . It is capable of validating the HTTP responses from the server.
+2 It is very rich in syntax and ready-made assertions.
+3) The setup of Rest Assured is easy and straightforward.
+4) The response is given in JSON or XML format and is easy to parse and validate.
+5) It can easily be integrated with other Java libraries like TestNG, JUnit, etc.
+6) It has very good support for various API authentication mechanisms.
+
+<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.5.1</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+
+============================================================================
+		HOW REST ASSURED WORKS
+		----------------------
+
+1. Create an HTTP request with all the details
+Example: https://reqres.in/api/users/2
+Base URL: https://reqres.in/
+Resource: api/users/
+Path Parameter: 2
+Query Parameter:
+Example: https://reqres.in/api/users?page=2
+
+HTTP Method/Verb
+-----------------
+
+The four basic Create, Read, Update and Delete (CRUD) operations are performed using the GET, PUT and DELETE methods in the REST interface
+
+POST: This Verb is used to create a new resource on a server.
+
+GET: This Verb is used to get or read data from a server.
+
+PUT or PATCH: Both PUT and PATCH Verbs are used to update a resource on a server.
+The PUT method is used to update the record entirely
+The PATCH method is used to update the record partially instead of updating the entire resource.
+
+DELETE: This Verb is used to delete a resource from a server.
+
+Headers:
+--------
+Headers represent the meta-data associated with HTTP requests or responses. It is the additional information that is passed between client and server along with the request or response. Headers are used for several purposes, such as authentication, caching, messaging body information, handling cookies, etc. Headers will be key-value pairs or can be a key with multiple values.
+
+Payload/Body:
+-------------
+The Payload/Body contains the information that the user wants to send to the server. The payload is used only with the requests that alter the existing resource or create new ones.
+
+2. Send the request over the network
+
+3. Validate the received Response
+
+HTTP Response
+--------------
+The HTTP Response consists of the status code/response code, Headers and Response body
+As we already discussed Headers and Body we will focus on Status Codes.
+
+Status Codes
+-------------
+HTTP status codes help us to understand the status of the response quickly.
+
+100-199: Informational: The request received and process continuing
+
+200-299: Success: The request succeeded
+
+300-399: Redirection: The request is redirecting to another URL
+
+400-499: Client Error: An error occurred from client-side
+
+500-599: Server Error: An error occurred from the server-side
+
+===================================================================================
+Rest Assured - BDDI (Behaviour Driven Development) Support
+-----------------------------------------------------------
+In BDD (Gherkin Style) test cases are written in a natural language that even non-programmers can read.
+REST Assured supports BDD format i.e given, when and then statements.
+
+given()/precondition - We provide all the input details here i.e. Base URI, Headers, Path Parameter, Query Parameter, and Request Body/Payload.
+when() - We specify the Resource, HTTP Request method like POST, GET, PUT, PATCH, or DELETE.
+then() - We validate the response i.e the response code, response time, response message, response headers, response body, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
