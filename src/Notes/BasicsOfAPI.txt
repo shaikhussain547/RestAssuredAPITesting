@@ -93,6 +93,29 @@ given()/precondition - We provide all the input details here i.e. Base URI, Head
 when() - We specify the Resource, HTTP Request method like POST, GET, PUT, PATCH, or DELETE.
 then() - We validate the response i.e the response code, response time, response message, response headers, response body, etc.
 
+===================================================================================
+
+Every Request in Rest-Assured library is represented by an interface called RequestSpecification.
+
+This interface allows to modify the request, like adding headers or adding authentication details.
+
+===================================================================================
+What is JSON
+-------------
+
+JSON stands for JavaScript Object Notation
+JSON is a lightweight format for storing and transporting data
+JSON is often used when data is sent from a server to a web page
+JSON is "self-describing" and easy to understand
+
+JSON Syntax Rules
+------------------
+
+Data is in name/value pairs
+Data is separated by commas
+Curly braces hold objects
+Square brackets hold arrays
+
 
 
 
