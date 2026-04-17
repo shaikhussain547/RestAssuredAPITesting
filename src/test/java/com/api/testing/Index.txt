@@ -3,3 +3,9 @@
 3. Test_PostMethod
 4. Test_PutMethod
 5. Test_PatchMethod
+6. CheckForValidResponse
+7. ValidateResponseHeader
+8. ValidateJsonResponseBody
+9. QueryParameterDemo
+10. Authorization
+11. AuthorizationBearerTkn
