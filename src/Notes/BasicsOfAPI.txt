@@ -116,6 +116,100 @@ Data is separated by commas
 Curly braces hold objects
 Square brackets hold arrays
 
+===================================================================================
+Deserialize" the JSON Response:
+-------------------------------
+Serialization and Deserialization are programming techniques. where we convert
+
+	Objects -> Byte Streams (Serialization)
+	Byte Streams -> Objects respectively(Deserialization)
+
+What is Serializing & Deserializing a JSON response?
+	Serialization is process of converting data objects into a stream of data.
+	The reverse process of serialization (stream to object) is deserialization.
+	This conversion is platform independent.
+
+===================================================================================
+			JSON Manipulation
+			-----------------
+What is JSON ?
+1) JSON (Javascript Object Notation) is one of the most used Data-Exchange format.
+2) JSON is majorly used to exchange data between Web Server and Client.
+3) It is a light weight format
+Independent of the programming language because almost all language can parse this.
+4) 5) In JSON format, data is represented as structured data and Stores Data in key value pair
+
+key is always a string (always in double quotes (""))
+A value can be a:
+		string
+		number (With decimal and without decimal)
+		a Boolean (true and false)
+		an object
+		an array
+		a null.
+
+Example:
+JSON format to describe a person-
+{
+  "firstName":"Amod",
+  "lastName": "Mahajan",
+  "age" : 28,
+  "salary":21000.56,
+  "Hobbies":["Music","Games","Computer"]
+}
+
+JSON Array
+----------
+
+1. How to create JSON Array Request Body using JSON Object
+2. How to create JSON Array Request Body Using List or Set
+An API may accept a JSON Array payload as well.
+For example: Booking for multiple passengers at once. In this case, we may need to pass multiple JSON objects within a JSON array.
+
+[
+{
+ "firstName":"Prachi",
+   "lastName":"Gupta",
+   "age": 28,
+   "salary": 10000.56,
+},
+{
+ "firstName":"Prachi",
+   "lastName":"Gupta",
+   "age": 28,
+   "salary": 10000.56,
+},
+{
+ "firstName":"Prachi",
+   "lastName":"Gupta",
+   "age": 28,
+   "salary": 10000.56,
+}
+]
+
+===================================================================================
+
+1. How To Create A JSON Object Using Jackson API - ObjectMapper
+	- Retrieve a field value from JSON Object or ObjectNode
+	- Retrieve all key-value pair from JSON Object or ObjectNode
+	- Remove a field from JSON Object or ObjectNode
+	- Update a field from JSON Object or ObjectNode
+
+What is Jackson API
+--------------------
+
+Jackson is a very popular and efficient java based library to perform
+
+	* serialization (Class object to bytes stream(JSON))
+	* deserialization (Byte stream (JSON) to class object)
+	* reading a JSON file
+	* writing a JSON file etc...
+
+
+
+
+
+
 
 
 
