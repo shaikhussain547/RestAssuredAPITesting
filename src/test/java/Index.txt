@@ -29,5 +29,8 @@
 
 #emp4_POJP
 
+#IgnoreEmptyValues
 
+#JsonIgnore
 
+#JsonIgnoreUnknownProperties
